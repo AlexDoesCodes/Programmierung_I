@@ -1,8 +1,6 @@
 package de.fhdw.prg1.hoh.set.myfirsttries;
 
-import org.w3c.dom.ls.LSOutput;
-
-public class switchAnweisung {
+public class SwitchCase {
     public static void main(String[] args) {
         char v = 'a';
         int z = 23;
