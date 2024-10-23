@@ -20,8 +20,6 @@ public class switchAnweisung {
             case 'c':
                 System.out.println('c');
                 break;
-            default:
-
         }
 
         System.out.println("The number is:");
