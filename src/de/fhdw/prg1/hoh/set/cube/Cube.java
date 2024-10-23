@@ -2,13 +2,14 @@ package de.fhdw.prg1.hoh.set.cube;
 
 public class Cube {
     public static void main(String[] args) {
-        drawCube(1);
+        drawCube(10);
     }
 
     private static void drawCube(int b) {
         System.out.println(fullLine(b));
-        cubeHeight(b);
-
+        if (b != 1) {
+            cubeHeight(b);
+        }
     }
 
     private static String fullLine(int f) {
