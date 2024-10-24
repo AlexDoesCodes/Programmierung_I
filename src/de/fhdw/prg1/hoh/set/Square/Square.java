@@ -1,14 +1,14 @@
-package de.fhdw.prg1.hoh.set.cube;
+package de.fhdw.prg1.hoh.set.Square;
 
-public class Cube {
+public class Square {
     public static void main(String[] args) {
-        drawCube(10); //Quadrat Größe
+        drawSquare(10); //Quadrat Größe
     }
 
-    private static void drawCube(int b) {
+    private static void drawSquare(int b) {
         System.out.println(fullLine(b)); //Erste volle Reihe
         if (b != 1) {
-            cubeHeight(b); //Quadrathöhe Methodik
+            squareHeight(b); //Quadrathöhe Methodik
         }
     }
 
@@ -20,16 +20,16 @@ public class Cube {
         return line;
     }
 
-    public static void cubeHeight(int s){
+    public static void squareHeight(int s){
         for(int i = 1; i <= s-2; i++){ //-2 um obere und untere Reihe ab zu ziehen
-            System.out.println(cubeWidth(s));
+            System.out.println(squareWidth(s));
         }
         System.out.println(fullLine(s));// untere volle Linie (aber nur wenn != 1
 
     }
 
 
-    private static String cubeWidth(int w){ //Würfelbreite
+    private static String squareWidth(int w){ //Würfelbreite
         String line = "";
 
         line += "*";
@@ -46,6 +46,4 @@ public class Cube {
         }
         return blanks;
     }
-
-
 }
