@@ -2,7 +2,10 @@ package de.fhdw.prg1.hoh.set.Square;
 
 public class Square {
     public static void main(String[] args) {
-        drawSquare(10); //Quadrat Größe
+        System.out.println("Enter square size:");
+        String input = System.console().readLine();
+        int size = Integer.valueOf(input);
+        drawSquare(size); //Quadrat Größe
     }
 
     private static void drawSquare(int b) {
