@@ -11,7 +11,8 @@ public class ArrayParameter {
     }
     // Method to calculate the sum of all elements in the given array
     public static double sum(double[] arr) {
-        double sum = 0; // Initialize sum to zero
+        double sum = 0.0; // Initialize sum to zero
+
         // Iterate over each element in the array
         for (double num : arr) {
             sum += num; // Add each element to the sum
