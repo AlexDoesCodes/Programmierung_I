@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Mirroring {
     public static void main(String[] args) {
-        int[] array = {1,2,3,4,5,6,7};
+        int[] array = {1};
         int[] arrayCopy = array.clone();
         int[] mirror = new int[array.length];
 
@@ -39,7 +39,6 @@ public class Mirroring {
         while (lower <= upper) {
             result[lower] = array[upper];
             result[upper] = array[lower];
-
             lower++;
             upper--;
         }
@@ -56,7 +55,6 @@ public class Mirroring {
         while (lower <= upper) {
             mirror[lower] = array[upper];
             mirror[upper] = array[lower];
-
             lower++;
             upper--;
         }
