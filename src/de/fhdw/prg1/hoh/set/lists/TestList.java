@@ -3,20 +3,23 @@ package de.fhdw.prg1.hoh.set.lists;
 public class TestList {
 
     public static void main(String[] args) {
-        //List l;
+        //List l = new List();
+        //Stack s = new Stack();
 
-        Stack s = new Stack();
+        Queue q = new Queue();
 
-        s.push(1);
-        s.push(4);
-        s.push(3);
-        s.push(5);
-        s.push(-6);
-        s.push(-7);
-
-        System.out.println(s.toString());
-        System.out.println(s.checkNegative());
-        System.out.println(s.toString());
-
+        q.append(1);
+        q.append(2);
+        q.append(3);
+        q.append(4);
+        q.append(5);
+        System.out.println(q.isEmpty());
+        System.out.println(q.toString());
+        System.out.println(q.pop());
+        System.out.println(q.toString());
+        System.out.println(q.pop());
+        System.out.println(q.toString());
+        q.append(6);
+        System.out.println(q);
     }
 }
