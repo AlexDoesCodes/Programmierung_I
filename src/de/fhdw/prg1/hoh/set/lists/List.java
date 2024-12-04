@@ -31,6 +31,14 @@ public class List {
         return result;
     }
 
+    int get(int position) {
+        return getNode(position).getContent();
+    }
+
+    int getFirst() {
+        return getNode(0).getContent();
+    }
+
     void insert(int position, int newValue) {
         ListNode newNode;
         ListNode predecessor;
@@ -49,6 +57,28 @@ public class List {
             predecessor.setSuccessor(newNode);
         }
         mSize++;  // setSize(size()+1)
+    }
+
+    void remove(int position) {
+        ListNode predecessor;
+
+        if (position==0) {
+            mStartNode = getNode(0).getSuccessor();
+        } else {
+            predecessor = getNode(position-1);
+            predecessor.setSuccessor(getNode(position).getSuccessor());
+        }
+        mSize--;
+    }
+
+    public String toString() {
+        String result;
+
+        result = "";
+        for (int i=0; i<mSize; i++) {
+            result += get(i) + " ";
+        }
+        return result;
     }
 
 }

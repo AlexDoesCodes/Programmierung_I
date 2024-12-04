@@ -9,9 +9,7 @@ public class DemoListNodes {
         de.fhdw.prg1.hoh.set.listsTry.ListNode n3;
         de.fhdw.prg1.hoh.set.listsTry.ListNode n4;
         de.fhdw.prg1.hoh.set.listsTry.ListNode n5;
-        de.fhdw.prg1.hoh.set.listsTry.List size;
         de.fhdw.prg1.hoh.set.listsTry.ListNode startNode;
-        de.fhdw.prg1.hoh.set.listsTry.ListNode val;
 
 
         n1 = new de.fhdw.prg1.hoh.set.listsTry.ListNode();

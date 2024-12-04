@@ -1,4 +1,4 @@
-package de.fhdw.prg1.hoh.set.lists;
+package de.fhdw.prg1.hoh.set.instances;
 
 public class Main {
 

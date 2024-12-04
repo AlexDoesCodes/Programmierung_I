@@ -33,7 +33,7 @@ public class List {
         return mSize;
     }
 
-    void setNode(int index, int value) {
+    void setNode(int index) {
         ListNode newNode;
         ListNode oldNode;
 

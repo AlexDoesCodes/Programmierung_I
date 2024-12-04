@@ -1,4 +1,6 @@
-package de.fhdw.prg1.hoh.set.lists;
+package de.fhdw.prg1.hoh.set.instances;
+
+import de.fhdw.prg1.hoh.set.lists.ListNode;
 
 public class DemoListNodes {
 
