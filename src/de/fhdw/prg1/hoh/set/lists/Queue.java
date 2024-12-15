@@ -36,4 +36,8 @@ public class Queue {
         return result;
     }
 
+    public int size() {
+        return mList.size();
+    }
+
 }

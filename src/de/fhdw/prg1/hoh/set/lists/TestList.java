@@ -8,18 +8,22 @@ public class TestList {
 
         Queue q = new Queue();
 
+
         q.append(1);
         q.append(2);
         q.append(3);
         q.append(4);
         q.append(5);
-        System.out.println(q.isEmpty());
-        System.out.println(q.toString());
-        System.out.println(q.pop());
-        System.out.println(q.toString());
-        System.out.println(q.pop());
-        System.out.println(q.toString());
-        q.append(6);
-        System.out.println(q);
+
+        System.out.println(sumOfElements(q));
+    }
+    static int sumOfElements(Queue q){
+        Queue newQ;
+        newQ = q;
+        int sum = 0;
+        while(newQ.size() > 0){
+            sum += newQ.pop();
+        }
+        return sum;
     }
 }
